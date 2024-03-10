@@ -1,0 +1,101 @@
+<header
+  data-aos="fade-down"
+  data-aos-duration="800"
+  data-aos-delay="300"
+  class="header bg-[#ffffff] px-12 sticky top-0 flex items-center font-smooch z-20  pl-[3em]"
+>
+  <img src="/assets/touchthepower.png" class="-ml-8 h-16" />
+
+  <ul
+    class="lg:flex flex-wrap ml-auto gap-7 items-center pl-[2em] hidden font-hind_siliguri"
+  >
+    <li class={`nav-item home-nav `} id="home-nav">
+      <a href="/#homeBanner">Home</a>
+    </li>
+    <li class={`nav-item insights-nav`} id="insights-nav">
+      <a href="/#insights">Why Problems</a>
+    </li>
+
+    <li class={`nav-item reward-nav `} id="reward-nav">
+      <a href="/#reward">Solutions</a>
+    </li>
+    <li class={`nav-item feature-nav`} id="feature-nav">
+      <a href="#feature">Who is God</a>
+    </li>
+
+    <li class={`nav-item purpose-nav `} id="purpose-nav">
+      <a href="/#purpose">Destination of Human</a>
+    </li>
+    <li class={`nav-item testimonial-nav `} id="testimonial-nav">
+      <a href="/#testimonial">Prayer Request</a>
+    </li>
+  </ul>
+
+  <div class="mobileMenu text-black ml-auto xl:hidden ml:hidden">
+    <button onclick="toggleMobileMenu()">
+      <svg
+        height="32px"
+        id="Layer_1"
+        style="enable-background:new 0 0 32 32;"
+        version="1.1"
+        viewBox="0 0 32 32"
+        width="32px"
+        fill="currentColor"
+        ><path
+          d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+        ></path></svg
+      >
+    </button>
+  </div>
+</header>
+<div
+  class="z-30 w-[16em] p-5 text-white bg-[#292929] fixed right-0 text-left rounded-lg hidden"
+  id="hamburger"
+>
+  <div class="w-full text-center">
+    <ul class="flex flex-col gap-y-5">
+      <li class="nav-item home-nav" id="home-nav">
+        <a href="/#homeBanner" onclick="toggleMobileMenu()">Home</a>
+      </li>
+      <li class="nav-item insights-nav" id="insights-nav">
+        <a href="/#insights" onclick="toggleMobileMenu()">Why Problems</a>
+      </li>
+
+      <li class="nav-item reward-nav" id="reward-nav">
+        <a href="/#reward" onclick="toggleMobileMenu()">Solutions</a>
+      </li>
+      <li class="nav-item feature-nav" id="feature-nav">
+        <a href="/#feature" onclick="toggleMobileMenu()">Who is God</a>
+      </li>
+
+      <li class="nav-item purpose-nav" id="purpose-nav">
+        <a href="/#purpose" onclick="toggleMobileMenu()">Destination of Human</a
+        >
+      </li>
+      <li class="nav-item" id="testimonial-nav">
+        <a href="/#testimonial" onclick="toggleMobileMenu()">Prayer Request</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<style>
+  li {
+    list-style-type: none;
+  }
+  .nav-item {
+    opacity: 0.75;
+    transition: all 0.1s ease-out;
+    color: #1092d2;
+    font-weight: 600;
+    font-size: medium;
+  }
+  .nav-item:hover {
+    transform: scale(1.1);
+  }
+  .active {
+    color: #9651dc;
+  }
+  .header {
+    backdrop-filter: blur(1em);
+  }
+</style>
