@@ -1,5 +1,6 @@
 ---
 import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
 ---
 
 <!doctype html>
@@ -31,7 +32,7 @@ import Header from "../components/header.astro";
   <body class="">
     <Header />
     <slot />
-
+    <Footer />
     <style>
       :root {
         --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
