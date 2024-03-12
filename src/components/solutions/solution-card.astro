@@ -1,0 +1,57 @@
+---
+const solutions: any = [
+  {
+    title: "Fallen World",
+    content:
+      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
+    imgUrl: "/assets/problems/stress-1.jfif",
+  },
+  {
+    title: "Wrong Decisions",
+    content:
+      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
+    imgUrl: "/assets/problems/stress-2.jfif",
+  },
+  {
+    title: "Wrong Priorities",
+    content:
+      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
+    imgUrl: "/assets/problems/stress-3.jfif",
+  },
+  {
+    title: "Wrong Choice",
+    content:
+      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
+    imgUrl: "/assets/problems/stress-4.jfif",
+  },
+];
+---
+
+<div class="md:mx-[15rem]">
+  <div class="flex flex-wrap gap-8 justify-center items-center">
+    {
+      solutions.map((solution) => (
+        <>
+          <div class="card px-4 w-full md:flex gap-16">
+            <img
+              src={solution.imgUrl}
+              alt="blog-image"
+              class=" w-full md:w-56 md:h-36 object-fill rounded-lg"
+            />
+            <div>
+              <div class="mt-2 text-[#108bf7] text-base my-2 font-bold">
+                {solution.title}
+              </div>
+              <div class="text-sm text-gray-600">{solution.content}</div>
+
+              <button class="  mt-4  px-4 py-1 border border-[#108bf7] text-[#108bf7] text-sm rounded-sm">
+                Read more
+              </button>
+            </div>
+          </div>
+          <div class="border mx-7  w-full border-gray-300" />
+        </>
+      ))
+    }
+  </div>
+</div>

@@ -1,0 +1,53 @@
+---
+const destinations: any = [
+  {
+    title: "Destiny of Human",
+    content:
+      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum",
+    imgUrl: "/assets/problems/wrong-priorities.jfif",
+  },
+  {
+    title: "Place",
+    content:
+      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum",
+    imgUrl: "/assets/problems/right-wrong.jfif",
+  },
+  {
+    title: "Plan",
+    content:
+      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum",
+    imgUrl: "/assets/problems/wrong-priorities.jfif",
+  },
+  {
+    title: "Purpose",
+    content:
+      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum",
+    imgUrl: "/assets/problems/right-wrong.jfif",
+  },
+];
+---
+
+<div class="dropdown-content md:mx-20">
+  <div class="flex flex-wrap gap-8 justify-center items-center">
+    {
+      destinations.map((destination) => (
+        <div class="card   p-4 w-[15rem] text-white">
+          <img
+            src={destination.imgUrl}
+            alt="blog-image"
+            class="w-full h-auto rounded-[46%]"
+          />
+          <div class="my-4  text-base font-medium text-center">
+            {destination.title}
+          </div>
+          <div class="text-sm ">{destination.content}</div>
+          <div class="flex justify-center items-center">
+            <button class="  mt-4  px-4 py-1 text-[#0b89f7] bg-white font-semibold text-sm rounded-sm">
+              Read more
+            </button>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</div>

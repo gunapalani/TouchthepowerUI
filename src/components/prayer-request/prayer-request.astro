@@ -1,0 +1,95 @@
+---
+import RequestForm from "./request-form.astro";
+---
+
+<div class="bg-white p-10">
+  <div class="mt-6 mb-2 text-[#045a94] text-center text-3xl font-medium">
+    Prayer Request
+  </div>
+
+  <div class="flex justify-center">
+    <div
+      class="text-center mb-6 border-[3px] mt-2 rounded-md w-24 border-[#045a94]"
+    >
+    </div>
+  </div>
+  <form>
+    <div class="md:flex md:h-96">
+      <div class="md:w-1/2 p-4 flex justify-center items-start mt-5 border-b-2 md:border-b-0 md:border-r-2">
+        <div class="">
+          <div class="checkbox">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            <label for="vehicle1"> Problems in Relationship</label><br />
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+            <label for="vehicle2"> Problems in Health</label><br />
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+            <label for="vehicle3"> Problems in Finance</label><br />
+          </div>
+          <div class="checkbox">
+            <input
+              type="checkbox"
+              id="vehicle4"
+              name="vehicle4"
+              value="bicycle"
+            />
+            <label for="vehicle4"> Social Problems</label><br /><br />
+          </div>
+        </div>
+      </div>
+      <div class="md:w-1/2 py-4 md:px-20">
+        <input
+          type="text"
+          class="my-4 w-full py-2 border-b-2 border-[#0b89f7] focus:outline-none"
+          placeholder="Name"
+          id="name"
+          name="name"
+        /><br />
+        <input
+          type="text"
+          class="my-4 w-full py-2 border-b-2 border-[#0b89f7] focus:outline-none"
+          placeholder="Email"
+          id="email"
+          name="email"
+        /><br />
+        <textarea
+          rows="4"
+          class="my-4 w-full py-2 border-[1.8px] border-gray-400 focus:outline-none"
+          id="message"
+          placeholder="Type your message here"
+          name="message"
+        >
+        </textarea>
+        <div class="flex justify-center md:justify-end items-center">
+          <button
+            class="mt-4 px-10 py-1 bg-[#0b89f7] text-white font-semibold text-sm rounded-sm"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<style>
+  .checkbox {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  label {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"] {
+    width: 1.4em;
+    height: 1.4rem;
+    cursor: pointer;
+    accent-color: #0b89f7;
+  }
+</style>
