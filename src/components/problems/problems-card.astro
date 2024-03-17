@@ -1,60 +1,11 @@
 ---
-const problems: any = [
-  {
-    title: "Fallen World",
-    content:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
-    imgUrl: "/assets/problems/wrong-priorities.jfif",
-  },
-  {
-    title: "Wrong Decisions",
-    content:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
-    imgUrl: "/assets/problems/right-wrong.jfif",
-  },
-  {
-    title: "Wrong Priorities",
-    content:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
-    imgUrl: "/assets/problems/wrong-priorities.jfif",
-  },
-  {
-    title: "Wrong Choice",
-    content:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
-    imgUrl: "/assets/problems/right-wrong.jfif",
-  },
-  {
-    title: "Natural Causes",
-    content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
-    imgUrl: "/assets/problems/wrong-priorities.jfif",
-  },
-  {
-    title: "Choosing the Master",
-    content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
-    imgUrl: "/assets/problems/right-wrong.jfif",
-  },
-  {
-    title: "Choosing the Master",
-    content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
-    imgUrl: "/assets/problems/right-wrong.jfif",
-  },
-  {
-    title: "Choosing the Master",
-    content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
-    imgUrl: "/assets/problems/right-wrong.jfif",
-  },
-];
+import { problems } from "./problems-content";
 ---
 
 <div class="dropdown-content md:mx-28">
   <div class="flex flex-wrap gap-8 justify-center items-center">
     {
-      problems.map((problem) => (
+      problems.map((problem, index) => (
         <div class="card bg-white rounded-lg shadow-md p-4 w-[15rem]">
           <img
             src={problem.imgUrl}
@@ -64,11 +15,17 @@ const problems: any = [
           <div class="mt-2 text-[#108bf7] text-base my-2 font-bold">
             {problem.title}
           </div>
-          <div class="text-sm text-gray-600">{problem.content}</div>
+          <div class="text-sm font-medium">{problem.content}</div>
           <div class="flex justify-center items-center">
-            <button class="  mt-4  px-4 py-1 bg-[#0b89f7] text-white text-sm rounded-sm">
-              Read more
-            </button>
+            <a
+              href={`/problems/${index}`}
+              class="text-cyan-600 font-bold pl-[.4em]"
+            >
+              {" "}
+              <button class="  mt-4  px-4 py-1 bg-[#0b89f7] text-white text-sm rounded-sm">
+                Read more
+              </button>
+            </a>
           </div>
         </div>
       ))
