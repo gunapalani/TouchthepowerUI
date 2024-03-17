@@ -9,22 +9,22 @@
     <li class={`nav-item home-nav `} id="home-nav">
       <a href="/#homeBanner">Home</a>
     </li>
-    <li class={`nav-item insights-nav`} id="insights-nav">
-      <a href="/#insights">Why Problems</a>
+    <li class={`nav-item problems-nav`} id="problems-nav">
+      <a href="/#problems">Why Problems</a>
     </li>
 
-    <li class={`nav-item reward-nav `} id="reward-nav">
-      <a href="/#reward">Solutions</a>
+    <li class={`nav-item solutions-nav `} id="solutions-nav">
+      <a href="/#solutions">Solutions</a>
     </li>
-    <li class={`nav-item feature-nav`} id="feature-nav">
-      <a href="#feature">Who is God</a>
+    <li class={`nav-item destination-nav `} id="destination-nav">
+      <a href="/#destination">Destination of Human</a>
+    </li>
+    <li class={`nav-item god-nav`} id="god-nav">
+      <a href="#god">Who is God</a>
     </li>
 
-    <li class={`nav-item purpose-nav `} id="purpose-nav">
-      <a href="/#purpose">Destination of Human</a>
-    </li>
-    <li class={`nav-item testimonial-nav `} id="testimonial-nav">
-      <a href="/#testimonial">Prayer Request</a>
+    <li class={`nav-item prayer-nav `} id="prayer-nav">
+      <a href="/#prayer">Prayer Request</a>
     </li>
   </ul>
 
@@ -54,23 +54,25 @@
       <li class="nav-item home-nav" id="home-nav">
         <a href="/#homeBanner" onclick="toggleMobileMenu()">Home</a>
       </li>
-      <li class="nav-item insights-nav" id="insights-nav">
-        <a href="/#insights" onclick="toggleMobileMenu()">Why Problems</a>
+      <li class="nav-item problems-nav" id="problems-nav">
+        <a href="/#problems" onclick="toggleMobileMenu()">Why Problems</a>
       </li>
 
-      <li class="nav-item reward-nav" id="reward-nav">
-        <a href="/#reward" onclick="toggleMobileMenu()">Solutions</a>
-      </li>
-      <li class="nav-item feature-nav" id="feature-nav">
-        <a href="/#feature" onclick="toggleMobileMenu()">Who is God</a>
+      <li class="nav-item solutions-nav" id="solutions-nav">
+        <a href="/#solutions" onclick="toggleMobileMenu()">Solutions</a>
       </li>
 
-      <li class="nav-item purpose-nav" id="purpose-nav">
-        <a href="/#purpose" onclick="toggleMobileMenu()">Destination of Human</a
+      <li class="nav-item destination-nav" id="destination-nav">
+        <a href="/#destination" onclick="toggleMobileMenu()"
+          >Destination of Human</a
         >
       </li>
-      <li class="nav-item" id="testimonial-nav">
-        <a href="/#testimonial" onclick="toggleMobileMenu()">Prayer Request</a>
+      <li class="nav-item god-nav" id="god-nav">
+        <a href="/#god" onclick="toggleMobileMenu()">Who is God</a>
+      </li>
+
+      <li class="nav-item prayer-nav" id="prayer-nav">
+        <a href="/#prayer" onclick="toggleMobileMenu()">Prayer Request</a>
       </li>
     </ul>
   </div>
@@ -90,7 +92,11 @@
     transform: scale(1.1);
   }
   .active {
-    color: #9651dc;
+    color: white;
+    background-color: #338abf;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
   }
   .header {
     backdrop-filter: blur(1em);

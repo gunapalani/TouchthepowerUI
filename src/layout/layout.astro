@@ -51,25 +51,19 @@ import Footer from "../components/footer.astro";
       body {
         margin: 0;
       }
-      :global(ul) {
-        list-style-type: disc;
+      ::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
       }
-      :global(h1) {
-        font-size: var(--font-size-xl);
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #1c3957;
+        border-radius: 5px;
       }
-      :global(h2) {
-        font-size: var(--font-size-lg);
-      }
-      :global(code) {
-        font-family:
-          Menlo,
-          Monaco,
-          Lucida Console,
-          Liberation Mono,
-          DejaVu Sans Mono,
-          Bitstream Vera Sans Mono,
-          Courier New,
-          monospace;
+
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: #1c3957 #f0f0f0;
       }
     </style>
     <script src="/js/navbar.js" is:inline defer></script>
