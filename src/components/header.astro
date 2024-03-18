@@ -2,7 +2,6 @@
 const pathname = new URL(Astro.request.url).pathname;
 const parts = pathname.slice(1).split("/");
 const currentPath = parts[0];
-console.log(currentPath);
 ---
 
 <header

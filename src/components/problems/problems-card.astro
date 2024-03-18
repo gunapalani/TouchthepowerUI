@@ -2,15 +2,15 @@
 import { problems } from "./problems-content";
 ---
 
-<div class="dropdown-content md:mx-28">
-  <div class="flex flex-wrap gap-8 justify-center items-center">
+<div class="dropdown-content lg:mx-28">
+  <div class="flex flex-wrap lg:gap-8 justify-center items-center">
     {
       problems.map((problem, index) => (
-        <div class="card bg-white rounded-lg shadow-md p-4 w-[15rem]">
+        <div class="card bg-white rounded-lg shadow-md p-4 m-5 lg:w-[15rem]">
           <img
             src={problem.imgUrl}
             alt="blog-image"
-            class="w-full h-auto rounded-lg"
+            class="h-32 w-full lg:h-auto  rounded-lg"
           />
           <div class="mt-2 text-[#108bf7] text-base my-2 font-bold">
             {problem.title}
