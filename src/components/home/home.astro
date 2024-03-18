@@ -3,7 +3,7 @@
 ---
 
 <div id="homeBanner">
-  <div class="bg-[#338abf] text-white w-full">
+  <div class="bg-overlay text-white w-full">
     <div class="md:flex justify-center items-center p-5">
       <div class="md:w-1/2 md:px-16 md:py-10">
         <div class="flex flex-col justify-center gap-5">
@@ -47,6 +47,19 @@
   </div>
 </div>
 <style>
+  .bg-overlay {
+    background-color: rgba(50, 135, 189, 0.9); /* Adjust opacity as needed */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #homeBanner {
+    background-image: url("/assets/home/bg-image.jpg");
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image within the element */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+
   .great-vibes-regular {
     font-family: "Great Vibes", cursive;
     font-weight: 400;

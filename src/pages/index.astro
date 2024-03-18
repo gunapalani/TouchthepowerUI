@@ -5,6 +5,7 @@ import Destination from "../components/destination/destination.astro";
 import WhoGod from "../components/who-god/who-god.astro";
 import Home from "../components/home/home.astro";
 import PrayerRequest from "../components/prayer-request/prayer-request.astro";
+import ReactPrayerRequest from "../components/prayer-request/prayer-request.tsx";
 import Layout from "../layout/layout.astro";
 ---
 
@@ -18,12 +19,13 @@ import Layout from "../layout/layout.astro";
   </head>
   <body>
     <Layout>
-      <Home/>
+      <Home />
       <Problems />
       <Solutions />
       <Destination />
       <WhoGod />
-      <PrayerRequest />
+      <!-- <PrayerRequest /> -->
+      <ReactPrayerRequest client:load />
     </Layout>
   </body>
 </html>
