@@ -73,15 +73,15 @@ const PrayerRequest = () => {
           )}
         </div>
       )}
-      <div id="prayer" className="bg-white p-10">
-        <div className="mt-6 mb-2 text-[#045a94] text-center text-3xl font-medium">
+      <div id="prayer" className="bg-white p-10" >
+        <div className="mt-6 mb-2 text-[#045a94] text-center text-3xl font-medium" >
           Prayer Request
         </div>
 
         <div className="flex justify-center">
           <div className="text-center mb-6 border-[3px] mt-2 rounded-md w-24 border-[#045a94]"></div>
         </div>
-        <form id="form-data" onSubmit={handleSubmit(onSubmit)}>
+        <form id="form-data" onSubmit={handleSubmit(onSubmit)} >
           <div className="md:flex md:h-96">
             <div className="md:w-1/2 p-4 flex justify-center items-start mt-5 border-b-2 md:border-b-0 md:border-r-2">
               <div className="">
