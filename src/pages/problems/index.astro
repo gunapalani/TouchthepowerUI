@@ -1,0 +1,113 @@
+---
+import Header from "../../components/header.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Touch the Power</title>
+    <meta charset="UTF-8" /><meta
+      name="viewport"
+      content="width=device-width"
+    /><meta property="title" content="Touch the Power" /><meta
+      property="description"
+      content="Unlock profound insights on life's purpose at Touch the Power. Explore solutions, ponder the divine, and submit prayer requests for spiritual growth."
+    /><meta
+      property="keywords"
+      content="Spiritual guidance, Life purpose, Problem-solving, Solutions, Divine exploration, Prayer requests, Personal growth, Spiritual discovery, Existential questions, Meaning of life"
+    />
+    <meta property="og:image" content="/assets/home/bg-image.jpg" /><meta
+      property="og:type"
+      content="website"
+    /><meta property="og:url" content="https://touchthepower.com" /><meta
+      property="og:title"
+      content="Touch the Power"
+    /><meta
+      property="og:description"
+      content="Unlock profound insights on life's purpose at Touch the Power. Explore solutions, ponder the divine, and submit prayer requests for spiritual growth."
+    /><meta property="twitter:url" content="https://touchthepower.com" /><meta
+      property="twitter:title"
+      content="Touch the Power"
+    /><meta
+      property="twitter:description"
+      content="Unlock profound insights on life's purpose at Touch the Power. Explore solutions, ponder the divine, and submit prayer requests for spiritual growth."
+    /><meta property="twitter:image" content="/assets/home/bg-image.jpg" /><meta
+      property="twitter:card"
+      content="summary_large_image"
+    /><meta property="robots" content="/robots.txt" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@next/dist/aos.css"
+    /><link rel="preconnect" href="https://fonts.googleapis.com" /><link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    /><link
+      href="https://fonts.googleapis.com/css2?family=Cairo&family=Smooch+Sans:wght@300;500&family=Hind+Siliguri:wght@700&family=Hind+Madurai:wght@700&family=Rubik:wght@700&family=Khula:wght@700&display=swap"
+      rel="stylesheet"
+      media="screen"
+    /><link rel="preconnect" href="https://fonts.googleapis.com" /><link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    /><link
+      href="https://fonts.googleapis.com/css2?family=Cairo&display=swap"
+      rel="stylesheet"
+    /></head
+  >
+
+  <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico" /> -->
+
+  <body class="">
+    <Header />
+    <slot />
+
+    <style>
+      :root {
+        --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+        --font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
+        --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+        --color-text: hsl(12, 5%, 4%);
+        --color-bg: hsl(240, 20%, 95%);
+        --color-border: hsl(17, 24%, 90%);
+      }
+      html {
+        font-family: "Cairo", sans-serif;
+        font-size: var(--font-size-base);
+        color: var(--color-text);
+        background-color: var(--color-bg);
+      }
+      body {
+        margin: 0;
+      }
+      ::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #1c3957;
+        border-radius: 5px;
+      }
+
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: #1c3957 #f0f0f0;
+      }
+    </style>
+    <script src="/js/navbar.js" is:inline defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" is:inline></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      is:inline></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+      is:inline></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"
+      is:inline></script>
+    <script is:inline>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+---
+import { problems } from "./problems-content";
+---
+
+<div class="dropdown-content lg:mx-28">
+  <div class="flex flex-wrap lg:gap-8 justify-center items-center">
+    {
+      problems.map((problem) => (
+        <div
+          class="card bg-white rounded-lg shadow-md p-4 m-5 lg:w-[15rem] "
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <img
+            src={problem?.imgUrl}
+            alt="blog-image"
+            class="h-32 w-full lg:h-auto  rounded-lg"
+          />
+          <div class="mt-2 text-[#108bf7] text-base my-2 font-bold">
+            {problem?.title}
+          </div>
+          <div class="text-sm font-medium">{problem?.content}</div>
+          <div class="flex justify-center items-center">
+            <a
+              href={`/problems/${problem?.navigationUrl}`}
+              class="text-cyan-600 font-bold pl-[.4em]"
+            >
+              <button class="  mt-4  px-4 py-1 bg-[#0b89f7] text-white text-sm rounded-sm">
+                Read more
+              </button>
+            </a>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</div>

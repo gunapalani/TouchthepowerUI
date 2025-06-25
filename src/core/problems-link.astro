@@ -1,0 +1,15 @@
+---
+import { problems } from "../components/problems/problems-content";
+---
+
+<div
+  class="flex flex-col gap-5 text-[1.1rem] text-[#108bf7] font-semibold border-r-2 w-1/6"
+>
+  {
+    problems.map((problem, index) => (
+      <a href={`/problems/${problem?.navigationUrl}`}>
+        <div>{problem.title}</div>
+      </a>
+    ))
+  }
+</div>

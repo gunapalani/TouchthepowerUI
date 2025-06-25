@@ -1,0 +1,52 @@
+---
+const whoGods: any = [
+  {
+    title: "Jesus The Lord God",
+    imgUrl: "/assets/problems/wrong-priorities.jfif",
+  },
+  {
+    title: "Jesus The Savior",
+    imgUrl: "/assets/problems/right-wrong.jfif",
+  },
+  {
+    title: "Jesus The Redeemer",
+    imgUrl: "/assets/problems/wrong-priorities.jfif",
+  },
+  {
+    title: "Jesus Sactifier",
+    imgUrl: "/assets/problems/right-wrong.jfif",
+  },
+  {
+    title: "Trinity The God Head",
+    imgUrl: "/assets/problems/wrong-priorities.jfif",
+  },
+  {
+    title: "Word of God",
+    imgUrl: "/assets/problems/right-wrong.jfif",
+  },
+  {
+    title: "Will of God",
+    imgUrl: "/assets/problems/wrong-priorities.jfif",
+  },
+];
+---
+
+<div class="dropdown-content md:mx-20">
+  <div class="flex flex-wrap gap-8 justify-center items-center">
+    {
+      whoGods.map((god) => (
+        <div
+          class="p-4  text-white flex flex-col justify-center items-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="w-16 h-16  border-[#045a94] border-[2px] rounded-[50%]" />
+          <div class="my-4 w-24 h-14 text-[#045a94]  text-base font-semibold text-center">
+            {god.title}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
