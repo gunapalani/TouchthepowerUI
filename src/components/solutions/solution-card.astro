@@ -1,28 +1,34 @@
 ---
 const solutions: any = [
   {
-    title: "Fallen World",
+    title: "எஜமான்களைத் தெரிந்தெடுத்தல்",
     content:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
+      " நாம் யாரால் control பண்ணப்படுகிறோம்; அல்லது நம்மை உந்தித் தள்ளும் சக்தி எது என்று (The driving force that controls us) அர்த்தம்.  உதாரணமாக: சிலருக்கு பணம் அவர்களது எஜமானன்.",
     imgUrl: "/assets/solutions/prob-relation.png",
   },
   {
-    title: "Wrong Decisions",
+    title: "வாழ்வின் பிரச்சனைகள்",
     content:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
+      "வாழ்க்கை என்பது ஒரு மலர்ப் படுக்கை அல்ல. அதே நேரத்தில் ஒரு கடும் புயலும் அல்ல. வாழ்வி ல் இன்பமும், துன்பமும் வருவதைப் பகலும், இரவும் வருவதற்கும், மழையும், வெயிலும் வருதற்கும் ஒப்பிடலாம். ",
     imgUrl: "/assets/solutions/prob-health.png",
   },
   {
-    title: "Wrong Priorities",
+    title: "உறவுகளில் பிரச்சனைகள்",
     content:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
+      "உறவுகள் ஆரம்பிக்கும் இடம் குடும்பம். கணவனும், மனைவியுமே குடும்பத்தின் முதல் அங்கத்தினர்கள். வேறு  வேறு சூழ்நிலைகளிலிருந்து வந்த இருவர்; கணவன் - மனைவி என்னும் உறவுக்குள் வரும்போது ",
     imgUrl: "/assets/solutions/prob-finance.png",
   },
   {
-    title: "Wrong Choice",
+    title: "சரீர ஆரோக்கியம் குறித்த பிரச்சனைகள்",
     content:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
+      " இன்றைய சூழலில் சரீர சுகம் என்பது வயதின் அடிப்படையில் நிர்மாணிக்க முடியாததாகக் காணப்படுகிறத. குழந்தைகள் பிறக்கும் போதே ஏராளமான ஆரோக்கியப் பிரச்சனைகளோடு குழந்தைகள் பிறக்கின்றன. ",
     imgUrl: "/assets/solutions/social-prob.png",
+  },
+  {
+    title: "பொருளாதார பிரச்சனைகள்",
+    content:
+      "ஒவ்வொரு தனி மனிதனின் பொருளாதாரப் பிரச்சனைக்கும் அநேக அடிப்படை காரணங்கள் உண்டு.சில காரணங்கள்:குடும்பத் தலைவனின் தவறான முடிவுகள் ",
+    imgUrl: "/assets/solutions/prob-relation.png",
   },
 ];
 ---
@@ -30,7 +36,7 @@ const solutions: any = [
 <div class="xl:mx-[15rem]">
   <div class="flex flex-wrap gap-8 justify-center items-center">
     {
-      solutions.map((solution) => (
+      solutions.map((solution, index) => (
         <>
           <div
             class="card px-4 w-full md:flex gap-16"
@@ -47,10 +53,14 @@ const solutions: any = [
                 {solution.title}
               </div>
               <div class="text-sm font-medium">{solution.content}</div>
-
-              <button class="  mt-4  px-4 py-1 border border-[#108bf7] text-[#108bf7] text-sm rounded-sm">
-                Read more
-              </button>
+              <a
+                href={`/solutions/${index + 1}`}
+                class="text-cyan-600 font-bold pl-[.4em]"
+              >
+                <button class="  mt-4  px-4 py-1 border border-[#108bf7] text-[#108bf7] text-sm rounded-sm">
+                  Read more
+                </button>
+              </a>
             </div>
           </div>
           <div class="border mx-7  w-full border-gray-300" />

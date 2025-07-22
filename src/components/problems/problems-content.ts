@@ -1,44 +1,44 @@
 export const problems: any = [
   {
-    title: "Fallen World",
+    title: "மனுக்குலமே நீ யார் ?",
     navigationUrl: "fallen-world",
     content:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
+      "மனுக்குலமே ! நீ கடவுளின் படைப்பு. உன்னைக் கடவுள் ஆணும், பெண்ணுமாகப் படைத்தார். உனக்காக, நீ வசிப்பதற்காக ... ",
     imgUrl: "/assets/problems/fallen-world.png",
   },
   {
-    title: "Wrong Decisions",
+    title: "தவறான தீர்மானங்கள் ",
     navigationUrl: "wrong-decision",
     content:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
+      "மனிதன் சந்திக்கும் சில பிரச்சனைகளையும் அவைகளின் தீர்வுகளையும் சிந்திப்போம் வாருங்கள்... ",
     imgUrl: "/assets/problems/wrong-dec.png",
   },
   {
-    title: "Wrong Priorities",
+    title: "தவறான முன்னுரிமைகள்",
     navigationUrl: "wrong-priorities",
     content:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
+      " முன்னுரிமைகள் மனிதனின் உறவுகளின் அடிப்படையில்தான் சுழல்கின்றது. எனவே அவன் ...",
     imgUrl: "/assets/problems/wrong-prior.png",
   },
   {
-    title: "Wrong Choice",
+    title: "தவறான தெரிந்தெடுப்புகள் ",
     navigationUrl: "wrong-choice",
     content:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
+      " சரியான தீர்மானம், சரியான முன்னுரிமைகளின்  அடிப்படையில் உங்கள் வாழ்வை நடத்த ...",
     imgUrl: "/assets/problems/wrong-choice.png",
   },
   {
-    title: "Natural Causes",
+    title: "தவறான தீர்மானங்கள்",
     navigationUrl: "natural-causes",
     content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
+      "முன்னுரிமைகள் மனிதனின் உறவுகளின் அடிப்படையில்தான் சுழல்கின்றது. எனவே அவன் ...",
     imgUrl: "/assets/problems/natural-cause.png",
   },
   {
-    title: "Choosing the Master",
+    title: "மனுக்குலமே நீ யார் ?",
     navigationUrl: "choosing-the-master",
     content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum, placeat nisi velit repellat natus odio!",
+      "மனிதன் சந்திக்கும் சில பிரச்சனைகளையும் அவைகளின் தீர்வுகளையும் சிந்திப்போம் வாருங்கள்...",
     imgUrl: "/assets/problems/choosing-mast.png",
   },
 ];

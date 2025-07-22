@@ -1,28 +1,32 @@
 ---
 const destinations: any = [
   {
-    title: "Destiny of Human",
+    title: " சமுதாயப் பிரச்சனைகள்",
     content:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum",
+      "தேவன் ஆதியிலே வானத்தையும், பூமியையும் படைத்தார். படைத்த அனைத்தையும் ‘நல்லது’ என்று கண்டார். தான் படைத்த முதல் ஆணையும், பெண்ணையும்,",
     imgUrl: "/assets/destination/dest-human.png",
+    index: 6,
   },
   {
-    title: "Place",
+    title: " இயற்கை சீற்றங்களால் மனிதன் சந்திக்கும் சேதங்கள்:",
     content:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum",
+      " சீராக சென்று கொண்டிருக்கும் மனிதவாழ்வு தடம் புரண்டு விடுதல். வீடுகளை இழத்தல் உடமைகள், சுகம், குடும்ப உறவுகள் கூட உடைந்து விடும். தனிமை!",
     imgUrl: "/assets/destination/place.png",
+    index: 7,
   },
   {
-    title: "Plan",
+    title: "        மனுக்குலமே! இந்த காலகட்டத்தில் நீ என்ன செய்ய வேண்டும்?",
     content:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum",
+      " கடவுள் யார் என்கிற தேடல் மட்டுமே மனுக்குலத்தின் தீவிர வேட்கையாகவும், வாக்கு வாதமாகவும் உள்ள இக்காலகட்டத்தில் கடவுள் யார்? அவரது குணாதிசயங்கள், ",
     imgUrl: "/assets/destination/plan.png",
+    index: 8,
   },
   {
-    title: "Purpose",
+    title: "தேவனாகிய கடவுள் மனிதனைப் படைக்க வேண்டும்",
     content:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum soluta quia ea architecto qui. Sunt, id ut culpa iusto numquam, neque consequatur porrodolorum",
+      "தேவனாகிய கடவுள் மனிதனைப் படைக்க வேண்டும் என்று திட்டம் (Plan) பண்ணினார். அவனை வைப்பதற்காக ஒரு இடத்தை (Place) ஆயத்தம் பண்ண விரும்பினார்.",
     imgUrl: "/assets/destination/purpose.png",
+    index: 9,
   },
 ];
 ---
@@ -46,9 +50,14 @@ const destinations: any = [
           </div>
           <div class="text-sm ">{destination.content}</div>
           <div class="flex justify-center items-center">
-            <button class="  mt-4  px-4 py-1 text-[#0b89f7] bg-white font-semibold text-sm rounded-sm">
-              Read more
-            </button>
+            <a
+              href={`/solutions/${destination.index}`}
+              class="text-cyan-600 font-bold pl-[.4em]"
+            >
+              <button class="  mt-4  px-4 py-1 text-[#0b89f7] bg-white font-semibold text-sm rounded-sm">
+                Read more
+              </button>
+            </a>
           </div>
         </div>
       ))
