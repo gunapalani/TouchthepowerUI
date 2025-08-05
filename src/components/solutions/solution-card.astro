@@ -1,42 +1,58 @@
 ---
 const solutions: any = [
   {
-    title: "எஜமான்களைத் தெரிந்தெடுத்தல்",
-    content:
-      " நாம் யாரால் control பண்ணப்படுகிறோம்; அல்லது நம்மை உந்தித் தள்ளும் சக்தி எது என்று (The driving force that controls us) அர்த்தம்.  உதாரணமாக: சிலருக்கு பணம் அவர்களது எஜமானன்.",
-    imgUrl: "/assets/solutions/prob-relation.png",
-  },
-  {
-    title: "வாழ்வின் பிரச்சனைகள்",
-    content:
-      "வாழ்க்கை என்பது ஒரு மலர்ப் படுக்கை அல்ல. அதே நேரத்தில் ஒரு கடும் புயலும் அல்ல. வாழ்வி ல் இன்பமும், துன்பமும் வருவதைப் பகலும், இரவும் வருவதற்கும், மழையும், வெயிலும் வருதற்கும் ஒப்பிடலாம். ",
-    imgUrl: "/assets/solutions/prob-health.png",
-  },
-  {
     title: "உறவுகளில் பிரச்சனைகள்",
     content:
-      "உறவுகள் ஆரம்பிக்கும் இடம் குடும்பம். கணவனும், மனைவியுமே குடும்பத்தின் முதல் அங்கத்தினர்கள். வேறு  வேறு சூழ்நிலைகளிலிருந்து வந்த இருவர்; கணவன் - மனைவி என்னும் உறவுக்குள் வரும்போது ",
-    imgUrl: "/assets/solutions/prob-finance.png",
+      "உறவுகள் ஆரம்பிக்கும் இடம் குடும்பம். கணவனும், மனைவியுமே குடும்பத்தின் முதல் அங்கத்தினர்கள்.",
+    imgUrl: "/assets/solutions/prob-relation.png",
   },
   {
     title: "சரீர ஆரோக்கியம் குறித்த பிரச்சனைகள்",
     content:
-      " இன்றைய சூழலில் சரீர சுகம் என்பது வயதின் அடிப்படையில் நிர்மாணிக்க முடியாததாகக் காணப்படுகிறத. குழந்தைகள் பிறக்கும் போதே ஏராளமான ஆரோக்கியப் பிரச்சனைகளோடு குழந்தைகள் பிறக்கின்றன. ",
-    imgUrl: "/assets/solutions/social-prob.png",
+      "இன்றைய சூழலில் சரீர சுகம் என்பது வயதின் அடிப்படையில் நிர்மாணிக்க முடியாததாகக் காணப்படுகிறது.",
+    imgUrl: "/assets/solutions/prob-health.png",
   },
   {
     title: "பொருளாதார பிரச்சனைகள்",
     content:
-      "ஒவ்வொரு தனி மனிதனின் பொருளாதாரப் பிரச்சனைக்கும் அநேக அடிப்படை காரணங்கள் உண்டு.சில காரணங்கள்:குடும்பத் தலைவனின் தவறான முடிவுகள் ",
+      "ஒவ்வொரு தனி மனிதனின் பொருளாதாரப் பிரச்சனைக்கும் அநேக அடிப்படை காரணங்கள் உண்டு.",
+    imgUrl: "/assets/solutions/prob-finance.png",
+  },
+  {
+    title: "சமுதாயப் பிரச்சனைகள்",
+    content:
+      "தேவன் ஆதியிலே வானத்தையும், பூமியையும் படைத்தார். படைத்த அனைத்தையும் ‘நல்லது’ என்று கண்டார்",
+    imgUrl: "/assets/solutions/social-prob.png",
+  },
+  {
+    title: "இயற்கை சீற்றங்களால் மனிதன் சந்திக்கும் சேதங்கள்",
+    content: "சீராக சென்று கொண்டிருக்கும் மனிதவாழ்வு தடம் புரண்டு விடுதல்",
     imgUrl: "/assets/solutions/prob-relation.png",
   },
+
+  {
+    title: "மனுக்குலமே! இந்த காலகட்டத்தில் நீ என்ன செய்ய வேண்டும்?",
+    content:
+      "கடவுள் யார் என்கிற தேடல் மட்டுமே மனுக்குலத்தின் தீவிர வேட்கையாகவும், வாக்கு வாதமாகவும் உள்ள இக்காலகட்டத்தில் கடவுள் யார்?",
+    imgUrl: "/assets/solutions/prob-relation.png",
+  },
+
+  {
+    title: "பூமியில் மனிதர்களின் தோற்றம் மற்றும் வாழ்க்கை",
+    content:
+      "தேவனாகிய கடவுள் மனிதனைப் படைக்க வேண்டும் என்று திட்டம் (Plan) பண்ணினார்",
+    imgUrl: "/assets/solutions/prob-relation.png",
+  },
+  ``,
 ];
 ---
 
 <div class="xl:mx-[15rem]">
   <div class="flex flex-wrap gap-8 justify-center items-center">
     {
-      solutions.map((solution, index) => (
+      solutions
+      .filter(solution => solution && solution.title && solution.content)
+      .map((solution, index) => (
         <>
           <div
             class="card px-4 w-full md:flex gap-16"
@@ -44,13 +60,13 @@ const solutions: any = [
             data-aos-duration="1000"
           >
             <img
-              src={solution.imgUrl}
+              src={solution?.imgUrl}
               alt="blog-image"
-              class=" w-full md:w-56 md:h-36 object-fill rounded-lg"
+              class=" w-full md:w-56 md:h-auto object-fill rounded-lg"
             />
             <div>
               <div class="mt-2 text-[#108bf7] text-base my-2 font-bold">
-                {solution.title}
+                {solution?.title}
               </div>
               <div class="text-sm font-medium">{solution.content}</div>
               <a
