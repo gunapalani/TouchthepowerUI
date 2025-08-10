@@ -1,0 +1,36 @@
+---
+import { Astro } from 'astro';
+const whoGods = [
+  { slug: 'jesus-the-lord-god', title: 'Jesus The Lord God', imgUrl: '/assets/home/title.png' },
+  { slug: 'jesus-the-savior', title: 'Jesus The Savior', imgUrl: '/assets/destination/plan.png' },
+  { slug: 'jesus-the-redeemer', title: 'Jesus The Redeemer', imgUrl: '/assets/destination/purpose.png' },
+  { slug: 'jesus-sactifier', title: 'Jesus Sactifier', imgUrl: '/assets/destination/place.png' },
+  { slug: 'trinity-the-god-head', title: 'Trinity The God Head', imgUrl: '/assets/destination/dest-human.png' },
+  { slug: 'word-of-god', title: 'Word of God', imgUrl: '/assets/solutions/prob-relation.png' },
+  { slug: 'will-of-god', title: 'Will of God', imgUrl: '/assets/solutions/prob-health.png' },
+  { slug: 'jesus-the-judge', title: 'Jesus the Judge', imgUrl: '/assets/solutions/prob-finance.png' },
+  { slug: 'sovereignty-of-god', title: 'Sovereingnty of God', imgUrl: '/assets/problems/fallen-world.png' },
+  { slug: 'who-is-jesus', title: 'Who is Jesus?', imgUrl: '/assets/problems/choosing-mast.png' },
+  
+];
+const { slug } = Astro.params;
+const god = whoGods.find(g => g.slug === slug);
+if (!god) {
+  throw new Error('Not found');
+}
+---
+
+<html>
+  <head>
+    <title>{god.title}</title>
+  </head>
+  <body class="min-h-screen flex flex-col items-center justify-center bg-white">
+    <div class="mt-10 flex flex-col items-center">
+      <img src={god.imgUrl} alt={god.title} class="w-32 h-32 rounded-full border-4 border-[#045a94] mb-6" />
+      <h1 class="text-3xl font-bold text-[#045a94] mb-4">{god.title}</h1>
+      <div class="text-lg text-gray-700 text-center max-w-xl">
+        <p>Content for {god.title} goes here. Please update this section with the actual content.</p>
+      </div>
+    </div>
+  </body>
+</html>
