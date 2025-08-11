@@ -17,6 +17,11 @@ const god = whoGods.find(g => g.slug === slug);
 if (!god) {
   throw new Error('Not found');
 }
+
+// Export getStaticPaths after whoGods is defined and before the frontmatter ends
+export function getStaticPaths() {
+  return whoGods.map(god => ({ params: { slug: god.slug } }));
+}
 ---
 
 <html>
