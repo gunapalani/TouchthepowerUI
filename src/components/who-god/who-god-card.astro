@@ -1,33 +1,15 @@
 ---
 const whoGods: any = [
-  {
-    title: "Jesus The Lord God",
-    imgUrl: "/assets/problems/wrong-priorities.jfif",
-  },
-  {
-    title: "Jesus The Savior",
-    imgUrl: "/assets/problems/right-wrong.jfif",
-  },
-  {
-    title: "Jesus The Redeemer",
-    imgUrl: "/assets/problems/wrong-priorities.jfif",
-  },
-  {
-    title: "Jesus Sactifier",
-    imgUrl: "/assets/problems/right-wrong.jfif",
-  },
-  {
-    title: "Trinity The God Head",
-    imgUrl: "/assets/problems/wrong-priorities.jfif",
-  },
-  {
-    title: "Word of God",
-    imgUrl: "/assets/problems/right-wrong.jfif",
-  },
-  {
-    title: "Will of God",
-    imgUrl: "/assets/problems/wrong-priorities.jfif",
-  },
+  { slug: 'jesus-the-lord-god', title: 'Jesus The Lord God', imgUrl: '/assets/whoisgod/1.png' },
+  { slug: 'jesus-the-savior', title: 'Jesus The Savior', imgUrl: '/assets/whoisgod/2.png' },
+  { slug: 'jesus-the-redeemer', title: 'Jesus The Redeemer', imgUrl: '/assets/whoisgod/3.png' },
+  { slug: 'jesus-sactifier', title: 'Jesus Sactifier', imgUrl: '/assets/whoisgod/4.png' },
+  { slug: 'trinity-the-god-head', title: 'Trinity The God Head', imgUrl: '/assets/whoisgod/5.png' },
+  { slug: 'word-of-god', title: 'Word of God', imgUrl: '/assets/whoisgod/6.png' },
+  { slug: 'will-of-god', title: 'Will of God', imgUrl: '/assets/whoisgod/7.png' },
+  { slug: 'jesus-the-judge', title: 'Jesus the Judge', imgUrl: '/assets/whoisgod/8.png' },
+  { slug: 'sovereignty-of-god', title: 'Sovereingnty of God', imgUrl: '/assets/whoisgod/9.png' },
+  { slug: 'who-is-jesus', title: 'Who is Jesus?', imgUrl: '/assets/whoisgod/10.png' },
 ];
 ---
 
@@ -35,16 +17,20 @@ const whoGods: any = [
   <div class="flex flex-wrap gap-8 justify-center items-center">
     {
       whoGods.map((god) => (
-        <div
-          class="p-4  text-white flex flex-col justify-center items-center"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div class="w-16 h-16  border-[#045a94] border-[2px] rounded-[50%]" />
-          <div class="my-4 w-24 h-14 text-[#045a94]  text-base font-semibold text-center">
-            {god.title}
+        <a href={`/who-god/${god.slug}`} class="no-underline">
+          <div
+            class="p-4  text-white flex flex-col justify-center items-center hover:shadow-lg hover:bg-[#e6f0fa] transition"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="w-16 h-16 border-[#045a94] border-[2px] rounded-[50%] bg-white flex items-center justify-center mb-2">
+              <img src={god.imgUrl} alt={god.title} class="w-12 h-12 rounded-full object-cover" />
+            </div>
+            <div class="my-4 w-24 h-14 text-[#045a94] text-base font-semibold text-center">
+              {god.title}
+            </div>
           </div>
-        </div>
+        </a>
       ))
     }
   </div>

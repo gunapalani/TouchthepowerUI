@@ -13,14 +13,7 @@ export const problems: any = [
       "மனிதன் சந்திக்கும் சில பிரச்சனைகளையும் அவைகளின் தீர்வுகளையும் சிந்திப்போம் வாருங்கள்... ",
     imgUrl: "/assets/problems/wrong-dec.png",
   },
-  {
-    title: "தவறான முன்னுரிமைகள்",
-    navigationUrl: "wrong-priorities",
-    content:
-      " முன்னுரிமைகள் மனிதனின் உறவுகளின் அடிப்படையில்தான் சுழல்கின்றது. எனவே அவன் ...",
-    imgUrl: "/assets/problems/wrong-prior.png",
-  },
-  {
+    {
     title: "தவறான தெரிந்தெடுப்புகள் ",
     navigationUrl: "wrong-choice",
     content:
@@ -28,17 +21,24 @@ export const problems: any = [
     imgUrl: "/assets/problems/wrong-choice.png",
   },
   {
-    title: "தவறான தீர்மானங்கள்",
-    navigationUrl: "natural-causes",
+    title: "தவறான முன்னுரிமைகள்",
+    navigationUrl: "wrong-priorities",
     content:
-      "முன்னுரிமைகள் மனிதனின் உறவுகளின் அடிப்படையில்தான் சுழல்கின்றது. எனவே அவன் ...",
-    imgUrl: "/assets/problems/natural-cause.png",
+      " முன்னுரிமைகள் மனிதனின் உறவுகளின் அடிப்படையில்தான் சுழல்கின்றது. எனவே அவன் ...",
+    imgUrl: "/assets/problems/wrong-prior.png",
   },
-  {
-    title: "மனுக்குலமே நீ யார் ?",
+ {
+    title: "எஜமான்களைத் தெரிந்தெடுத்தல்",
     navigationUrl: "choosing-the-master",
     content:
-      "மனிதன் சந்திக்கும் சில பிரச்சனைகளையும் அவைகளின் தீர்வுகளையும் சிந்திப்போம் வாருங்கள்...",
+      "நாம் யாரால் control பண்ணப்படுகிறோம்; அல்லது நம்மை உந்தித் தள்ளும் சக்தி எது என்று...",
     imgUrl: "/assets/problems/choosing-mast.png",
+  },
+   {
+    title: "வாழ்வின் பிரச்சனைகள்",
+    navigationUrl: "natural-causes",
+    content:
+      "வாழ்க்கை என்பது ஒரு மலர்ப் படுக்கை அல்ல. அதே நேரத்தில் ஒரு கடும் புயலும் அல்ல...",
+    imgUrl: "/assets/problems/natural-cause.png",
   },
 ];
